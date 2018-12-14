@@ -70,7 +70,7 @@ using WebHospital.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(200, 100, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4c42040f79a4495889cd5e4245c1defe", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "129b0614587246eaa72821607cf79e04", async() => {
                 BeginContext(206, 87, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Index</title>\r\n");
                 EndContext();
@@ -90,7 +90,7 @@ using WebHospital.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(302, 337, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "81c5b82a433f4949a5ade81eaf11e9fc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0d0ca2847de842bf8de2cce2607ed306", async() => {
                 BeginContext(308, 19, true);
                 WriteLiteral("\r\n\r\n\r\n    <div>\r\n\r\n");
                 EndContext();
