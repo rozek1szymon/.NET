@@ -37,3 +37,4 @@ C:\Users\HP\Desktop\MVC Projects\WebHospital\WebHospital\obj\Debug\netcoreapp2.1
 C:\Users\HP\Desktop\MVC Projects\WebHospital\WebHospital\obj\Debug\netcoreapp2.1\Razor\Views\Home\ShowAllDoctors.g.cshtml.cs
 C:\Users\HP\Desktop\MVC Projects\WebHospital\WebHospital\obj\Debug\netcoreapp2.1\Razor\Views\Home\WriteCode.g.cshtml.cs
 C:\Users\HP\Desktop\MVC Projects\WebHospital\WebHospital\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_MyLayout.g.cshtml.cs
+C:\Users\HP\Desktop\MVC Projects\WebHospital\WebHospital\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs

@@ -40,9 +40,14 @@ namespace WebHospital.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime? Date{ get; set; }
+
+        
+        [Required]
+        [StringLength(30)]
+        public string Password { get; set; }
         /// <summary>
         /// we are creating private list of Patients
         /// </summary>
-       
+
     }
 }

@@ -2,16 +2,9 @@
 {
     background-color:rebeccapurple;
 }
-#register-button {
-    
-    margin: -20px -50px;
-    position: relative;
-    top: 50%;
-    left: 44%;
+.btn-info{
+    text-decoration:none;
 }
-#login-button {
-    margin: -20px -50px;
-    position: relative;
-    top: 50%;
-    left: 56%;
+.btn-info:hover {
+    text-decoration: none;
 }

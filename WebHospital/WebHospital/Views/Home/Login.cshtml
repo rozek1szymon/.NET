@@ -1,0 +1,32 @@
+﻿@model WebHospital.Models.Patients;
+
+@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+
+</head>
+<body>
+    <form asp-action="Login" method="post">
+        <div asp-validation-summary="All"></div>
+        <p>
+            <label asp-for="Email">Email:</label>
+            <input asp-for="Email" />
+        </p>
+        <p>
+
+
+            <label asp-for="Password">Your Password:</label>
+            <input  type="password" asp-for="Password" />
+
+        
+        <button type="submit">Sing in</button>
+    </form>
+
+</body>
+</html>

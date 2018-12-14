@@ -21,8 +21,12 @@
         we need to make an action which allow our guests to register in our hospital and after
             "asp-action" we have to write down name of our view on which we have our registration page
         *@
-        <button id="register-button" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><a asp-action="Registration">Register here </a></button>
-        <button id="login-button" type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo"><a asp-action="Login">Login here </a></button>
+        @section Logging
+            {
+            <button  type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><a asp-action="Registration">Register here </a></button>
+            <button  type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo"><a asp-action="Login">Login here </a></button>
+
+        }
 
     </div>
    

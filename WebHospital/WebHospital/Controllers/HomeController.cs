@@ -11,7 +11,8 @@ using WebHospital.Models;
 using System.Linq;
 using TextmagicRest;
 using TextmagicRest.Model;
-
+using System.Security.Cryptography;
+using System.Text;
 
 namespace WebHospital.Controllers
 {
@@ -40,19 +41,19 @@ namespace WebHospital.Controllers
         [HttpPost]
         public  IActionResult Registration(Patients patient, gmail model)
         {
-           
-
-
-           
-
-
-            
 
 
 
-            
+
+
+
+
             if (ModelState.IsValid)
             {
+
+               
+
+
                 Random rnd = new Random();
                 int activationCode = rnd.Next(100000, 999999);
                 model.ToWho = patient.Email;
@@ -102,6 +103,34 @@ namespace WebHospital.Controllers
   
            
                 
+
+        }
+
+        [HttpGet]
+        public IActionResult Login() => View();
+        [HttpPost]
+        public IActionResult Login(Patients newpatient)
+        {
+            
+            var correct = context.patients.Where(e => e.Password == newpatient.Password && e.Email ==newpatient.Email).FirstOrDefault();            
+
+            if(correct!=null)
+            {
+
+                return View("Logged");
+            }
+            else
+            {
+                return View();
+            }
+            
+
+
+
+
+
+
+
 
         }
 

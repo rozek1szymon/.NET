@@ -6,19 +6,25 @@
     <title>@ViewBag.Title</title>
     <link href="~/css/MylayoutCSS.css" rel="stylesheet" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    
 </head>
 <body>
     <div class="jumbotron text-center">
         <h1>Welcome in our hospital</h1>
-        
+
     </div>
+
+
+    <nav class="navbar navbar-dark bg-primary">
+        @RenderSection("Logging", required: false)
+    </nav>
     <div id="content">
         <article>
             @RenderBody()
         </article>
-        
+
     </div>
-    
+
     <footer>
         contact   email Sth
     </footer>

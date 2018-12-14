@@ -28,7 +28,7 @@
         </p>
         <p>
             <label asp-for="Pesel">Your PESEL:</label>
-            <input type="text" pattern="[0-9]{9}" asp-for="Pesel"  title="Pesek should have 11 Numbers" />
+            <input type="text" pattern="[0-9]{9}" asp-for="Pesel" title="Pesek should have 11 Numbers" />
         </p>
         <p>
 
@@ -39,7 +39,11 @@
         </p>
         <p>
             <label asp-for="Phone">Your phone:</label>
-            <input type="text" pattern="[0-9]{9}"asp-for="Phone" title="Number should have 9 digits" />
+            <input type="text" pattern="[0-9]{9}" asp-for="Phone" title="Number should have 9 digits" />
+        </p>
+        <p>
+            <label asp-for="Password">Your Password:</label>
+            <input  type="password" asp-for="Password"  />
         </p>
         <p>
         <p>
