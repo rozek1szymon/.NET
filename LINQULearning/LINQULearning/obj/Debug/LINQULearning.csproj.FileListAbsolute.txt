@@ -1,0 +1,14 @@
+C:\Users\HP\Desktop\projekty w CB\LINQULearning\LINQULearning\bin\Debug\LINQULearning.exe.config
+C:\Users\HP\Desktop\projekty w CB\LINQULearning\LINQULearning\bin\Debug\LINQULearning.exe
+C:\Users\HP\Desktop\projekty w CB\LINQULearning\LINQULearning\bin\Debug\LINQULearning.pdb
+C:\Users\HP\Desktop\projekty w CB\LINQULearning\LINQULearning\obj\Debug\LINQULearning.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\projekty w CB\LINQULearning\LINQULearning\obj\Debug\LINQULearning.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\projekty w CB\LINQULearning\LINQULearning\obj\Debug\LINQULearning.exe
+C:\Users\HP\Desktop\projekty w CB\LINQULearning\LINQULearning\obj\Debug\LINQULearning.pdb
+C:\Users\HP\Desktop\MVC Projects\LINQULearning\LINQULearning\obj\Debug\LINQULearning.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\MVC Projects\LINQULearning\LINQULearning\obj\Debug\LINQULearning.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\MVC Projects\LINQULearning\LINQULearning\obj\Debug\LINQULearning.exe
+C:\Users\HP\Desktop\MVC Projects\LINQULearning\LINQULearning\obj\Debug\LINQULearning.pdb
+C:\Users\HP\Desktop\MVC Projects\LINQULearning\LINQULearning\bin\Debug\LINQULearning.exe.config
+C:\Users\HP\Desktop\MVC Projects\LINQULearning\LINQULearning\bin\Debug\LINQULearning.exe
+C:\Users\HP\Desktop\MVC Projects\LINQULearning\LINQULearning\bin\Debug\LINQULearning.pdb

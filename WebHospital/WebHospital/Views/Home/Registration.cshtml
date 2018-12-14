@@ -1,0 +1,54 @@
+﻿@*What is important we have to import model from which we will be using variables*@
+@model WebHospital.Models.Patients 
+@{ 
+    Layout = null;
+}
+
+
+<!DOCTYPE html
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RsvpForm</title>
+    
+</head>
+<body>
+    <form asp-action="Registration" method="post">
+        <div asp-validation-summary="All"></div>
+        <p>
+            <label asp-for="Name">Your name:</label>
+            <input asp-for="Name" />
+        </p>
+        <p>
+
+
+            <label asp-for="Surname">Your Surname:</label>
+            <input asp-for="Surname" />
+
+        </p>
+        <p>
+            <label asp-for="Pesel">Your PESEL:</label>
+            <input asp-for="Pesel" />
+        </p>
+        <p>
+
+
+            <label asp-for="Email">Your email:</label>
+            <input asp-for="Email" />
+
+        </p>
+        <p>
+            <label asp-for="Phone">Your phone:</label>
+            <input pattern="{9} "asp-for="Phone" />
+        </p>
+        <p>
+        <p>
+            <label asp-for="Data">Data of your birth</label>
+            <input asp-for="Data" />
+        </p>
+        </p>
+        <button type="submit">Register</button>
+    </form>
+   
+    </body>
+</html>

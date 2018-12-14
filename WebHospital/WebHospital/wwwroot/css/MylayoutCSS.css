@@ -1,0 +1,17 @@
+﻿body 
+{
+    background-color:rebeccapurple;
+}
+#register-button {
+    
+    margin: -20px -50px;
+    position: relative;
+    top: 50%;
+    left: 48%;
+}
+#login-button {
+    margin: -20px -50px;
+    position: relative;
+    top: 50%;
+    left: 53%;
+}

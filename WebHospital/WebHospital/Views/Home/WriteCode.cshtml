@@ -1,0 +1,41 @@
+﻿@model WebHospital.Models.Patients;
+@{
+    Layout = null;
+}
+@{
+    ViewBag.Title = "Registration";
+}
+<!DOCTYPE html
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ActivationCode</title>
+    <script type="text/javascript">
+        var activated = @(ViewBag.Activation);
+    </script>
+</head>
+<body>
+
+
+    <form asp-action="WriteCode" id="myform">
+        <div id="showIt"><p id="email-info"></p></div>
+        <input id="code" type="number" placeholder="Write your cactivation code...">
+        <button id="button1" type="submit">Submit</button>
+        @Html.HiddenFor(m => m.Name)
+        @Html.HiddenFor(m => m.Pesel)
+        @Html.HiddenFor(m => m.Email)
+        @Html.HiddenFor(m => m.Surname)
+        @Html.HiddenFor(m => m.Data)
+        @Html.HiddenFor(m => m.Phone)
+
+    </form>
+   
+    
+       
+    
+
+
+
+    <script type="text/javascript" src="~/js/site.js">
+    </script>
+</body>

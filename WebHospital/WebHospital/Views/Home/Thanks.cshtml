@@ -1,0 +1,37 @@
+﻿
+@{
+    // It s mean that we do not want to have any layout
+    Layout = null;
+}
+@{
+    ViewBag.Title = "WriteCode";
+}
+@*
+    we have here typical html template
+*@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+
+    <div>
+
+      @foreach(var i in ViewBag.Message)
+
+      {
+          <h1>@i</h1>
+      }
+        @* <p>Thanks, @Model.Name</p>
+        @if (Model.AcceptStatue == true)
+        { <p>You have registered</p>}
+
+        else
+        {  <p>Sorry you have to accept the statement</p> }
+        *@
+    </div>
+</body>
+</html>
