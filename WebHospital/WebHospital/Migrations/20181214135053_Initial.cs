@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WebHospital.Migrations
@@ -11,14 +12,14 @@ namespace WebHospital.Migrations
                 name: "patients",
                 columns: table => new
                 {
-                    Pesel = table.Column<int>(maxLength: 11, nullable: false),
+                    Pesel = table.Column<int>(nullable: false),
                     ID = table.Column<long>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(maxLength: 30, nullable: false),
                     Surname = table.Column<string>(maxLength: 30, nullable: false),
                     Email = table.Column<string>(nullable: false),
-                    Phone = table.Column<string>(maxLength: 9, nullable: false),
-                    Data = table.Column<int>(nullable: false)
+                    Phone = table.Column<string>(nullable: false),
+                    Date = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {

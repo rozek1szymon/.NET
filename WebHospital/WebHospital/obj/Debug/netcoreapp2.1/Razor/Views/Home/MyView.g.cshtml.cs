@@ -71,7 +71,7 @@ using WebHospital.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(186, 100, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a011fb7d54743ca81f68e6aab1690fd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eee2f0fa96974b8db30dcb769807a07a", async() => {
                 BeginContext(192, 87, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Index</title>\r\n");
                 EndContext();
@@ -91,7 +91,7 @@ using WebHospital.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(288, 611, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8612f7e0d5cb47b8a3c60941edacf09d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f913358c9825412cbcae055f4658314f", async() => {
                 BeginContext(294, 15, true);
                 WriteLiteral("\r\n    <div>\r\n\r\n");
                 EndContext();
@@ -99,7 +99,7 @@ using WebHospital.Models;
                 WriteLiteral("        <button id=\"register-button\" type=\"button\" class=\"btn btn-info\" data-toggle=\"collapse\" data-target=\"#demo\">");
                 EndContext();
                 BeginContext(648, 47, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3cdaf32c038b463797fccc1b8bcd1853", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "254110a1c5224167b98c04638e6662df", async() => {
                     BeginContext(677, 14, true);
                     WriteLiteral("Register here ");
                     EndContext();
@@ -121,7 +121,7 @@ using WebHospital.Models;
                 WriteLiteral("</button>\r\n        <button id=\"login-button\" type=\"button\" class=\"btn btn-success\" data-toggle=\"collapse\" data-target=\"#demo\">");
                 EndContext();
                 BeginContext(821, 37, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f1324c48a074a4aa6257a169a6828cf", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "abd9aace591d4c84a1fcc0f9ab1979d8", async() => {
                     BeginContext(843, 11, true);
                     WriteLiteral("Login here ");
                     EndContext();

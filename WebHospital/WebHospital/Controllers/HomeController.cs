@@ -89,21 +89,17 @@ namespace WebHospital.Controllers
         [HttpPost]
         public IActionResult WriteCode(Patients patient)
         {
-            var emails = context.patients.Where(e => e.Email == "rozek1szymon@gmail.com").Select(e => e.Name).ToArray();
-             ViewBag.Message = emails;
             context.patients.Add(patient);
             context.SaveChanges();
+            var emails = context.patients.Where(e => e.Email == "rozek1szymon@gmail.com").Select(e => e.Name).ToArray();
+             ViewBag.Message = emails;
+            
             return View("Thanks",emails);
             
 
 
            
-            
-          
-            
-
-            
-            
+  
            
                 
 
