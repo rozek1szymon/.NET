@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-    
-    
+
+    <link href="~/css/MylayoutCSS.css" rel="stylesheet" />
+
 </head>
 <body>
-    <div class="jumbotron text-center">
-        <h1>Welcome in our hospital</h1>
-
-    </div>
+    
 
 
-    <nav class="navbar navbar-dark bg-primary">
+    
         @RenderSection("Logging")
-    </nav>
+   
     <div id="content">
         <article>
             @RenderBody()
@@ -25,8 +23,6 @@
 
     </div>
 
-    <footer>
-        contact   email Sth
-    </footer>
+   
 </body>
 </html>

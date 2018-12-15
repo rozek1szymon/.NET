@@ -11,48 +11,83 @@
     <meta name="viewport" content="width=device-width" />
     <title>Registration</title>
     
+    <link href="~/css/RegistrationCSS.css" rel="stylesheet" />
+    
 </head>
 <body>
+    
     <form asp-action="Registration" method="post">
         <div asp-validation-summary="All"></div>
         <p>
-            <label asp-for="Name">Your name:</label>
-            <input asp-for="Name" />
+
+
+
+            <div class="group">
+                <input asp-for="Name" type="text" required /><span class="highlight"></span><span class="bar"></span>
+                <label asp-for="Name">Name</label>
+
+            </div>
+
+        </p>
+
+        <p>
+
+            <div class="group">
+                <input asp-for="Surname" type="text" required /><span class="highlight"></span><span class="bar"></span>
+                <label asp-for="Surname"> Surname</label>
+
+            </div>
+
+
+
+        </p>
+        <p>
+            <div class="group">
+                <input type="text" pattern="[0-9]{11}" asp-for="Pesel" title="Pesel should have 11 Numbers" required /><span class="highlight"></span><span class="bar"></span>
+                <label asp-for="Pesel"> Pesel</label>
+
+            </div>
         </p>
         <p>
 
-
-            <label asp-for="Surname">Your Surname:</label>
-            <input asp-for="Surname" />
-
-        </p>
-        <p>
-            <label asp-for="Pesel">Your PESEL:</label>
-            <input type="text" pattern="[0-9]{9}" asp-for="Pesel" title="Pesek should have 11 Numbers" />
-        </p>
-        <p>
+            <div class="group">
+                <input type="text" asp-for="Email" required /><span class="highlight"></span><span class="bar"></span>
+                <label asp-for="Email"> Email</label>
 
 
-            <label asp-for="Email">Your email:</label>
-            <input asp-for="Email" />
+            </div>
 
         </p>
         <p>
-            <label asp-for="Phone">Your phone:</label>
-            <input type="text" pattern="[0-9]{9}" asp-for="Phone" title="Number should have 9 digits" />
+            <div class="group">
+                <input type="text" pattern="[0-9]{9}" asp-for="Phone" title="Number should have 9 digits" required /><span class="highlight"></span><span class="bar"></span>
+                <label asp-for="Phone"> Phone number</label>
+
+            </div>
+
         </p>
         <p>
-            <label asp-for="Password">Your Password:</label>
-            <input  type="password" asp-for="Password"  />
+            <div class="group">
+                <input type="password" asp-for="Password" required /><span class="highlight"></span><span class="bar"></span>
+                <label asp-for="Password"> Password</label>
+
+            </div>
+
         </p>
         <p>
         <p>
-            <label asp-for="Date">Date of your birth</label>
-            <input asp-for="Date" />
-        </p>
-        </p>
-        <button type="submit">Register</button>
+            <div class="group">
+                <input asp-for="Date" /><span class="highlight"></span><span class="bar"></span>
+                <label asp-for="Date"></label>
+
+            </div>
+
+
+
+            <button type="submit">REGISTER!</button>
     </form>
-   
-    </body>
+
+
+
+</body>
 </html>

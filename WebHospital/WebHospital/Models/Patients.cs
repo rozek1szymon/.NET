@@ -10,12 +10,14 @@ namespace WebHospital.Models
 {
     public class Patients
     {
+        public long ID { get; set; }
+
 
         [Required (ErrorMessage = "Pesel must have 11 numbers")]
         [RegularExpression("^[0-9]*$", ErrorMessage = "Pesel contains  11 numbers")]
-        public int? Pesel { get; set; }
+        public string Pesel { get; set; }
 
-        public long ID { get; set; }
+        
 
         [RegularExpression("^[a-zA-Z]+$", ErrorMessage = "Name contains only letters")]
         [Required(ErrorMessage = "Name contains only letters")]
@@ -37,11 +39,8 @@ namespace WebHospital.Models
         public string Phone { get; set; }
 
         [Required(ErrorMessage = "Write date of your birth down")]
-        [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime? Date{ get; set; }
-
-        
         [Required]
         [StringLength(30)]
         public string Password { get; set; }

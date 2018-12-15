@@ -39,7 +39,7 @@ namespace WebHospital.Migrations
                         .IsRequired()
                         .HasMaxLength(30);
 
-                    b.Property<int?>("Pesel")
+                    b.Property<string>("Pesel")
                         .IsRequired();
 
                     b.Property<string>("Phone")

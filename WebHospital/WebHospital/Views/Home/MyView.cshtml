@@ -25,9 +25,23 @@
         *@
         @section Logging
             {
-            <button  type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><a asp-action="Registration">Register here </a></button>
-            <button  type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo"><a asp-action="Login">Login here </a></button>
+        <div class="wrapper">
 
+            <div class="button">
+                <span class="button__mask"></span>
+                <span class="button__text">SIGN UP</span>
+               <a asp-action="Registration"><span class="button__text button__text--bis">SIGN UP</span></a>
+            </div>
+
+            <br>
+
+            <div class="button">
+                <span class="button__mask"></span>
+                <span class="button__text">SIGN IN</span>
+               <a asp-action="Login"> <span class="button__text button__text--bis">SIGN IN</span></a>
+            </div>
+
+        </div>
         }
 
     </div>

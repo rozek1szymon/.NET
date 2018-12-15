@@ -73,7 +73,7 @@ using WebHospital.Models;
             WriteLiteral("<!DOCTYPE html\r\n<html>\r\n");
             EndContext();
             BeginContext(132, 209, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0070b042a61546258f9a6ec9cf51dc41", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5af5c155a6a84625ae307cdb25d195cd", async() => {
                 BeginContext(138, 157, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>ActivationCode</title>\r\n    <script type=\"text/javascript\">\r\n        var activated = ");
                 EndContext();
@@ -103,12 +103,12 @@ using WebHospital.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(343, 662, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "800fe1a2beb242c19393529c3d18e527", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "39e4cf3c14f7426b8a054dcb9e375647", async() => {
                 BeginContext(349, 10, true);
                 WriteLiteral("\r\n\r\n\r\n    ");
                 EndContext();
                 BeginContext(359, 534, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7047559931a5449997e1895e9fde3be2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e9606ff7a3cf45d8bbd3d4c94b838565", async() => {
                     BeginContext(400, 212, true);
                     WriteLiteral("\r\n        <div id=\"showIt\"><p id=\"email-info\"></p></div>\r\n        <input id=\"code\" type=\"number\" placeholder=\"Write your cactivation code...\">\r\n        <button id=\"button1\" type=\"submit\">Submit</button>\r\n        ");
                     EndContext();
@@ -203,7 +203,7 @@ using WebHospital.Models;
                 WriteLiteral("\r\n   \r\n    \r\n       \r\n    \r\n\r\n\r\n\r\n    ");
                 EndContext();
                 BeginContext(931, 65, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2ab18e51ab44240960f7fe85db21553", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2efa036a7e6a49d5bd3ce9a30affa221", async() => {
                     BeginContext(981, 6, true);
                     WriteLiteral("\r\n    ");
                     EndContext();

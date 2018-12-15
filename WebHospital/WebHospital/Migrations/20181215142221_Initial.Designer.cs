@@ -10,8 +10,8 @@ using WebHospital.Models;
 namespace WebHospital.Migrations
 {
     [DbContext(typeof(MainDb))]
-    [Migration("20181214195540_Initial1")]
-    partial class Initial1
+    [Migration("20181215142221_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -41,7 +41,7 @@ namespace WebHospital.Migrations
                         .IsRequired()
                         .HasMaxLength(30);
 
-                    b.Property<int?>("Pesel")
+                    b.Property<string>("Pesel")
                         .IsRequired();
 
                     b.Property<string>("Phone")

@@ -12,14 +12,15 @@ namespace WebHospital.Migrations
                 name: "patients",
                 columns: table => new
                 {
-                    Pesel = table.Column<int>(nullable: false),
                     ID = table.Column<long>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Pesel = table.Column<string>(nullable: false),
                     Name = table.Column<string>(maxLength: 30, nullable: false),
                     Surname = table.Column<string>(maxLength: 30, nullable: false),
                     Email = table.Column<string>(nullable: false),
                     Phone = table.Column<string>(nullable: false),
-                    Date = table.Column<DateTime>(nullable: false)
+                    Date = table.Column<DateTime>(nullable: false),
+                    Password = table.Column<string>(maxLength: 30, nullable: false)
                 },
                 constraints: table =>
                 {
