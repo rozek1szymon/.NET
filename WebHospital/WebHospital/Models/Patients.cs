@@ -39,7 +39,7 @@ namespace WebHospital.Models
         public string Phone { get; set; }
 
         [Required(ErrorMessage = "Write date of your birth down")]
-        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
+        [DisplayFormat(DataFormatString = "{0:d}")]
         public DateTime? Date{ get; set; }
         [Required]
         [StringLength(30)]
