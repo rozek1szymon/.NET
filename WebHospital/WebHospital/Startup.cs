@@ -40,6 +40,12 @@ namespace WebHospital
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=PasswordHelp}/{action=Index}/{id?}");
+            });
         }
     }
 }

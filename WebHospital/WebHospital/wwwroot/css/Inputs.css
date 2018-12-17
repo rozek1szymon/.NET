@@ -95,5 +95,17 @@ form
 {
     margin-right:30px;
 }
+.passwordhelp
+{
+    text-decoration:none;
+    color:white;
+    
+}
+
+.passwordhelp:hover {
+    text-decoration: none;
+    color: dodgerblue;
+    cursor:pointer;
+}
 
 

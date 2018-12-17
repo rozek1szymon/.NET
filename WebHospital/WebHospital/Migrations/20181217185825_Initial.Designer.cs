@@ -10,7 +10,7 @@ using WebHospital.Models;
 namespace WebHospital.Migrations
 {
     [DbContext(typeof(MainDb))]
-    [Migration("20181215142221_Initial")]
+    [Migration("20181217185825_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,6 +20,25 @@ namespace WebHospital.Migrations
                 .HasAnnotation("ProductVersion", "2.1.4-rtm-31024")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("WebHospital.Models.doctor", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool?>("Availability");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Service");
+
+                    b.Property<string>("Surname");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("doctors");
+                });
 
             modelBuilder.Entity("WebHospital.Models.Patients", b =>
                 {
@@ -38,8 +57,7 @@ namespace WebHospital.Migrations
                         .HasMaxLength(30);
 
                     b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(30);
+                        .IsRequired();
 
                     b.Property<string>("Pesel")
                         .IsRequired();

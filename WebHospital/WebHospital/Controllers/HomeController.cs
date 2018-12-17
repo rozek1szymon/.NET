@@ -13,6 +13,8 @@ using TextmagicRest;
 using TextmagicRest.Model;
 using System.Security.Cryptography;
 using System.Text;
+using System.Web.Helpers;
+
 
 namespace WebHospital.Controllers
 {
@@ -74,6 +76,7 @@ namespace WebHospital.Controllers
                 smtp.Send(mm);
                 ViewBag.Activation = activationCode;
                 ViewBag.Message = "Mail has been sent successfully!";
+                
                 return View("WriteCode", patient);
             }
             else
@@ -90,6 +93,7 @@ namespace WebHospital.Controllers
         [HttpPost]
         public IActionResult WriteCode(Patients patient)
         {
+            patient.Password = Hashing.Hash(patient.Password);
             context.patients.Add(patient);
             context.SaveChanges();
             var emails = context.patients.Where(e => e.Email == "rozek1szymon@gmail.com").Select(e => e.Name).ToArray();
@@ -105,6 +109,7 @@ namespace WebHospital.Controllers
                 
 
         }
+        
 
         [HttpGet]
         public IActionResult Login() => View();
@@ -112,12 +117,19 @@ namespace WebHospital.Controllers
         public IActionResult Login(Patients newpatient)
         {
             
-            var correct = context.patients.Where(e => e.Password == newpatient.Password && e.Email ==newpatient.Email).FirstOrDefault();            
+            var correct = context.patients.Where(e => e.Email ==newpatient.Email).FirstOrDefault();            
 
             if(correct!=null)
             {
-
-                return View("Logged");
+                if(string.Compare(Hashing.Hash(newpatient.Password), correct.Password) == 0)
+                {
+                    return View("Logged");
+                }
+                else
+                {
+                    return View();
+                }
+                
             }
             else
             {

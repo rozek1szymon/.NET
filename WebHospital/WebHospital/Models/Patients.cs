@@ -42,7 +42,6 @@ namespace WebHospital.Models
         [DisplayFormat(DataFormatString = "{0:d}")]
         public DateTime? Date{ get; set; }
         [Required]
-        [StringLength(30)]
         public string Password { get; set; }
         /// <summary>
         /// we are creating private list of Patients

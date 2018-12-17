@@ -55,8 +55,7 @@ namespace WebHospital.Migrations
                         .HasMaxLength(30);
 
                     b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(30);
+                        .IsRequired();
 
                     b.Property<string>("Pesel")
                         .IsRequired();
