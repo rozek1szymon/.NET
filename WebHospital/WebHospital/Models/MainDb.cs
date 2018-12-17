@@ -15,8 +15,9 @@ namespace WebHospital.Models
         
        // public DbSet<doctor> doctors { get; set; }
        public DbSet<Patients> patients { get; set; }
+        public DbSet<doctor> doctors { get; set; }
 
 
-        
+
     }
 }
