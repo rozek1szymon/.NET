@@ -1,0 +1,40 @@
+﻿@*What is important we have to import model from which we will be using variables*@
+@model LoginWithIdentity.Models.UserOfProgram
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="~/css/Inputs.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <form asp-action="Registration" method="post">
+        <div asp-validation-summary="All"></div>
+
+
+        <p>
+
+            <span class="input">
+                <input asp-for="UserName" type="text" required placeholder="Name" />
+            </span>
+
+        </p>
+
+
+
+    </form>
+
+
+
+</body>
+</html>

@@ -44,17 +44,8 @@ namespace WebHospital.Controllers
         public  IActionResult Registration(Patients patient, gmail model)
         {
 
-
-
-
-
-
-
             if (ModelState.IsValid)
             {
-
-               
-
 
                 Random rnd = new Random();
                 int activationCode = rnd.Next(100000, 999999);
@@ -114,15 +105,16 @@ namespace WebHospital.Controllers
         [HttpGet]
         public IActionResult Login() => View();
         [HttpPost]
-        public IActionResult Login(Patients newpatient)
+        public async Task<IActionResult> Login(LoginUser newpatient)
         {
             
-            var correct = context.patients.Where(e => e.Email ==newpatient.Email).FirstOrDefault();            
+            var correct = context.patients.Where(e => e.Email == newpatient.Email).FirstOrDefault();            
 
             if(correct!=null)
             {
                 if(string.Compare(Hashing.Hash(newpatient.Password), correct.Password) == 0)
                 {
+                  
                     return View("Logged");
                 }
                 else

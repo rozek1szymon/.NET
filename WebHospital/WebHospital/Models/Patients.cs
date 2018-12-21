@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Data.Entity;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 
 namespace WebHospital.Models
 {
