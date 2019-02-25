@@ -27,46 +27,46 @@ namespace WebHospital.Controllers
         [HttpGet]
         public IActionResult passwordhelp() => View();
 
-        [HttpPost]
-        public IActionResult passwordhelp(Patients pat)
-        {
-            var account = context.patients.Where(x => x.Email == pat.Email).FirstOrDefault();
-            if(account!=null)
-            {
-              System.Guid activationCode = Guid.NewGuid();
+        //[HttpPost]
+        //public IActionResult passwordhelp(Patients pat)
+        //{
+        //   // var account = context.patients.Where(x => x.Email == pat.Email).FirstOrDefault();
+        //    if(account!=null)
+        //    {
+        //      System.Guid activationCode = Guid.NewGuid();
                 
-                MailMessage mm = new MailMessage("mvclearn@gmail.com", pat.Email);
-                mm.Subject = "Resetacja hasła";
-                var verifyUrl =  activationCode;
-                // var link = Request.Url.AbsoluteUri.Replace(Request.Url.PathAndQuery, verifyUrl);
+        //        MailMessage mm = new MailMessage("mvclearn@gmail.com", pat.Email);
+        //        mm.Subject = "Resetacja hasła";
+        //        var verifyUrl =  activationCode;
+        //        // var link = Request.Url.AbsoluteUri.Replace(Request.Url.PathAndQuery, verifyUrl);
                 
 
-                mm.Body = $"Please confirm your account";
-                mm.IsBodyHtml = true;
+        //        mm.Body = $"Please confirm your account";
+        //        mm.IsBodyHtml = true;
 
 
-                SmtpClient smtp = new SmtpClient();
-                smtp.Host = "smtp.gmail.com";
-                smtp.Port = 587;
-                smtp.EnableSsl = true;
-                NetworkCredential nc = new NetworkCredential("mvclearn@gmail.com", "MvcJestSuper");
-                smtp.UseDefaultCredentials = true;
-                smtp.Credentials = nc;
-                smtp.Send(mm);
+        //        SmtpClient smtp = new SmtpClient();
+        //        smtp.Host = "smtp.gmail.com";
+        //        smtp.Port = 587;
+        //        smtp.EnableSsl = true;
+        //        NetworkCredential nc = new NetworkCredential("mvclearn@gmail.com", "MvcJestSuper");
+        //        smtp.UseDefaultCredentials = true;
+        //        smtp.Credentials = nc;
+        //        smtp.Send(mm);
                 
-                ViewBag.Message = "Mail has been sent successfully!";
+        //        ViewBag.Message = "Mail has been sent successfully!";
 
 
-                return View("Thanks");
-            }
-            else
-            {
-                ViewBag.message = "Account not found";
-                return View("WriteCode");
-            }
+        //        return View("Thanks");
+        //    }
+        //    else
+        //    {
+        //        ViewBag.message = "Account not found";
+        //        return View("WriteCode");
+        //    }
 
            
-        }
+        //}
 
 
     }

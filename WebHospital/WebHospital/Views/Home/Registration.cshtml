@@ -20,77 +20,54 @@
     
     <form asp-action="Registration" method="post">
         <div asp-validation-summary="All"></div>
-       
-        
+
+
         <p>
 
             <span class="input">
-                <input asp-for="Name" type="text" required placeholder="Name"/>
+                <input asp-for="UserName" type="text" required placeholder="User Name" />
             </span>
-           
+
         </p>
 
         <p>
 
             <span class="input">
-                <input asp-for="Surname" type="text" required  placeholder="Surname"/>
-               </span>
-</p>
-
-        <p>
-            <span class="input">
-                <input type="text" pattern="[0-9]{11}" asp-for="Pesel" title="Pesel should have 11 Numbers" required placeholder="Pesel" />
+                <input asp-for="Email" type="text" required placeholder="Email" />
             </span>
-                
         </p>
 
         <p>
 
             <span class="input">
-                <input type="text" asp-for="Email" required placeholder="Email"/>
+                <input asp-for="PasswordHash" type="text" required placeholder="Password" />
             </span>
-                
-
-
-            
-
         </p>
+
+
+
         <p>
             <span class="input">
-                <input type="text" pattern="[0-9]{9}" asp-for="Phone" title="Number should have 9 digits" required  placeholder="Phone"/>
+                <input type="text" pattern="[0-9]{9}" asp-for="PhoneNumber" title="Number should have 9 digits" required placeholder="Phone" />
             </span>
-                
 
-            
 
-        </p>
-        <p>
-            <span class="input">
-                <input type="password" asp-for="Password" required placeholder="Password" />
-            </span>
-                
 
-          
 
-        </p>
-        
-        <p>
-            <div class="date">
-                <span class="input">
-                    <input asp-for="Date" />
-                </span>
-            </div>
         </p>
 
 
 
 
-            <div class="wrapper">
-                <button class="btn btn-light" type="submit">REGISTER!</button>
-            </div>
 
 
-</form>
+
+        <div class="wrapper">
+            <button class="btn btn-light" type="submit">REGISTER!</button>
+        </div>
+
+
+    </form>
 
 
 

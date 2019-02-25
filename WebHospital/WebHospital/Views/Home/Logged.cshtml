@@ -1,7 +1,25 @@
-﻿
-@{
-    ViewData["Title"] = "Logged";
-}
+﻿@using WebHospital.Models
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Patients> SignInManager
+@inject UserManager<Patients> UserManager
 
-<h2>Logged</h2>
+
+
+<input type="text" id="mapsearch" />
+<div id="map"></div>
+<style>
+    #map {
+        height: 400px;
+        width: 50%;
+    }
+</style>
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <h1>Welcome @UserManager.GetUserName(User)</h1>
+}
+else
+{
+    <h1>null</h1>
+}
 

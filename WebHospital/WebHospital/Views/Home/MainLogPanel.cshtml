@@ -1,0 +1,50 @@
+﻿
+
+    @{
+        ViewData["Title"] = "MyView";
+        Layout = "~/Views/Shared/_MyLayout.cshtml";
+    }
+
+@*
+    we have here typical html template
+*@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+   
+
+</head>
+<body>
+    <div>
+
+        @*
+        we need to make an action which allow our guests to register in our hospital and after
+            "asp-action" we have to write down name of our view on which we have our registration page
+        *@
+        @section Logging
+            {
+        <div class="wrapper">
+
+            <div class="button">
+                <span class="button__mask"></span>
+                <span class="button__text">SIGN UP</span>
+               <a asp-action="Registration"><span class="button__text button__text--bis">SIGN UP</span></a>
+            </div>
+
+            <br>
+
+            <div class="button">
+                <span class="button__mask"></span>
+                <span class="button__text">SIGN IN</span>
+               <a asp-action="Login"> <span class="button__text button__text--bis">SIGN IN</span></a>
+            </div>
+
+        </div>
+        }
+
+    </div>
+   
+    </body>

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using WebHospital.Models;
 namespace WebHospital.Models
@@ -6,7 +7,7 @@ namespace WebHospital.Models
     /// <summary>
     /// We create database which has "doctor" variables we create a constructor too, like this below
     /// </summary>
-    public class MainDb : DbContext 
+    public class MainDb : IdentityDbContext<Patients>
     {
         public MainDb(DbContextOptions<MainDb> options) : base(options)
         {
@@ -14,7 +15,7 @@ namespace WebHospital.Models
         }
         
        // public DbSet<doctor> doctors { get; set; }
-       public DbSet<Patients> patients { get; set; }
+       //public DbSet<Patients> patients { get; set; }
         public DbSet<doctor> doctors { get; set; }
 
 

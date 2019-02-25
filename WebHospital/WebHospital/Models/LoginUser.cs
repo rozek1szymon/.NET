@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace WebHospital.Models
 {
  
-        public class LoginUser
+        public class LoginUser 
         {
             public string Email { get; set; }
 

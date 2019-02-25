@@ -1,0 +1,199 @@
+﻿body {
+    font-size: 16px;
+    line-height: 1.6em;
+    font-family: Arial, Hevatica;
+    background-color: #F3F3F3;
+    margin: 0;
+}
+
+
+
+#img {
+    float: left;
+}
+
+#logophoto {
+    width: 10%;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(to bottom, #00ff00 -31%, #2e3030 43%);
+    min-height: 100px;
+    color: white;
+    padding-top: 30px;
+    border-bottom: rgb(17,247,1) 3px solid;
+}
+
+    header #branding h1 {
+        margin-top: 20px;
+    }
+
+    header ul {
+        padding: 0;
+        margin-top: 24px;
+    }
+
+    header li {
+        float: left;
+        display: inline;
+        padding: 0 10px 0 10px;
+    }
+
+    header a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16;
+    }
+
+    header #branding {
+        float: left;
+    }
+
+    header nav {
+        float: right;
+    }
+
+    header #current, #my {
+        color: rgb(17,247,1);
+        font-weight: bold;
+    }
+
+    header a:hover {
+        color: white;
+        font-weight: bold;
+    }
+
+#Photo-section {
+    text-align: center;
+    min-height: 400px;
+    background: url('../images/photo.jpg');
+}
+
+    #Photo-section h1 {
+        font-size: 60px;
+        color: white;
+        margin-top: 80px;
+    }
+
+    #Photo-section p {
+        font-size: 35px;
+        color: white;
+    }
+
+#boxes {
+    display: block;
+    width: 25%;
+}
+
+#follow {
+    background: linear-gradient(to top, #00ff00 -31%, #2e3030 43%);
+    min-height: 80px;
+    color: white;
+}
+
+    #follow h1 {
+        float: left;
+        margin-top: 25px;
+    }
+
+#email-info {
+    color: red;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    height: 20px;
+    font-weight: bold;
+}
+
+#follow form {
+    float: right;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#follow input[type="email"] {
+    background: none;
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+    border-radius: 15px;
+    border: 2px solid white;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+#button1 {
+    height: 38px;
+    width: 100px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(17,247,1);
+    border-radius: 15px;
+    cursor: pointer;
+}
+/*#button1:hover{
+    height: 37px;
+    width: 96px;
+     border: none;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(17,247,1);
+    border-radius: 15px;
+    cursor: pointer;
+} */
+#boxes {
+    width: 75%;
+    float: left;
+    text-align: center;
+}
+
+    #boxes .box {
+        display: block;
+        float: left;
+        width: 40%;
+        padding: 15px;
+    }
+
+
+
+
+        #boxes .box img {
+            width: 300px;
+        }
+
+#aside1 {
+    float: right;
+    width: 18%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+aside #color {
+    background-color: #2e3030;
+    padding: 20px;
+    color: white;
+}
+
+#clogo {
+    color: rgb(17,247,1);
+}
+
+footer #footer1 {
+    height: 60px;
+    background-color: #2e3030;
+    text-align: center;
+    color: white;
+}
+
+

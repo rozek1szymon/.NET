@@ -1,49 +1,37 @@
-﻿
-
-    @{
-        ViewData["Title"] = "MyView";
-        Layout = "~/Views/Shared/_MyLayout.cshtml";
-    }
-
-@*
-    we have here typical html template
-*@
+﻿@using WebHospital.Models
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Patients> SignInManager
+@inject UserManager<Patients> UserManager
+@{
+    ViewData["Title"] = "PageWithJobs";
+}
+@{
+    Layout = null;
+}
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    
+    <meta charset="UTF-8">
+    <title>My own webpage</title>
+    <link href="~/css/main.css" rel="stylesheet" />
 
 </head>
-<body>
-    <div>
 
-        @*
-        we need to make an action which allow our guests to register in our hospital and after
-            "asp-action" we have to write down name of our view on which we have our registration page
-        *@
-        @section Logging
-            {
-        <div class="wrapper">
+<a asp-action="MainLogPanel">here log</a>
 
-            <div class="button">
-                <span class="button__mask"></span>
-                <span class="button__text">SIGN UP</span>
-               <a asp-action="Registration"><span class="button__text button__text--bis">SIGN UP</span></a>
-            </div>
 
-            <br>
 
-            <div class="button">
-                <span class="button__mask"></span>
-                <span class="button__text">SIGN IN</span>
-               <a asp-action="Login"> <span class="button__text button__text--bis">SIGN IN</span></a>
-            </div>
+<h1>hell world</h1>
 
-        </div>
-        }
+@if (SignInManager.IsSignedIn(User))
+{
+    <h1>Welcome @UserManager.GetUserName(User)</h1>
+}
+else
+{
+    <h1>null</h1>
+}
 
-    </div>
-   
-    </body>
+
+
+

@@ -1,0 +1,12 @@
+C:\Users\HP\Desktop\MVC Projects\LogingWithIdentity\LogingWithIdentity\bin\Debug\netcoreapp2.0\LogingWithIdentity.deps.json
+C:\Users\HP\Desktop\MVC Projects\LogingWithIdentity\LogingWithIdentity\bin\Debug\netcoreapp2.0\LogingWithIdentity.runtimeconfig.json
+C:\Users\HP\Desktop\MVC Projects\LogingWithIdentity\LogingWithIdentity\bin\Debug\netcoreapp2.0\LogingWithIdentity.runtimeconfig.dev.json
+C:\Users\HP\Desktop\MVC Projects\LogingWithIdentity\LogingWithIdentity\bin\Debug\netcoreapp2.0\LogingWithIdentity.dll
+C:\Users\HP\Desktop\MVC Projects\LogingWithIdentity\LogingWithIdentity\bin\Debug\netcoreapp2.0\LogingWithIdentity.pdb
+C:\Users\HP\Desktop\MVC Projects\LogingWithIdentity\LogingWithIdentity\obj\Debug\netcoreapp2.0\LogingWithIdentity.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\MVC Projects\LogingWithIdentity\LogingWithIdentity\obj\Debug\netcoreapp2.0\LogingWithIdentity.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\MVC Projects\LogingWithIdentity\LogingWithIdentity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\HP\Desktop\MVC Projects\LogingWithIdentity\LogingWithIdentity\obj\Debug\netcoreapp2.0\LogingWithIdentity.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\MVC Projects\LogingWithIdentity\LogingWithIdentity\obj\Debug\netcoreapp2.0\LogingWithIdentity.AssemblyInfo.cs
+C:\Users\HP\Desktop\MVC Projects\LogingWithIdentity\LogingWithIdentity\obj\Debug\netcoreapp2.0\LogingWithIdentity.dll
+C:\Users\HP\Desktop\MVC Projects\LogingWithIdentity\LogingWithIdentity\obj\Debug\netcoreapp2.0\LogingWithIdentity.pdb
